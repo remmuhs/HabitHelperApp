@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/peach"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".activities.LoginActivity">
 
     <EditText
         android:id="@+id/etUsername"
@@ -16,17 +16,19 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivName"
         android:background="@drawable/slight_rounded_corners"
         android:backgroundTint="@color/cream"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
-        android:paddingLeft="4dp"
+        android:paddingLeft="13dp"
         android:textAlignment="textStart"
         android:textColor="@color/sienna"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivName" />
+        android:textSize="20dp"
+        android:fontFamily="@font/bright" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -35,17 +37,19 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
         android:background="@drawable/slight_rounded_corners"
         android:backgroundTint="@color/cream"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:paddingLeft="4dp"
+        android:paddingLeft="13dp"
         android:textAlignment="textStart"
         android:textColor="@color/sienna"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+        android:textSize="20dp"
+        android:fontFamily="@font/bright" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -56,8 +60,11 @@
         android:layout_marginEnd="30dp"
         android:background="@drawable/slight_rounded_corners"
         android:backgroundTint="@color/sienna"
+        android:fontFamily="@font/bright"
         android:text="Log in"
+        android:textAllCaps="false"
         android:textColor="@color/cream"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
@@ -70,8 +77,12 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/slight_rounded_corners"
-        android:text="Don't Have an account? Sign Up"
+        android:fontFamily="@font/bright"
+        android:lineSpacingExtra="-14dp"
+        android:text="Don't have an account? Sign up"
+        android:textAllCaps="false"
         android:textColor="@color/cream"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"
@@ -88,7 +99,7 @@
         app:srcCompat="@drawable/name_logo_large" />
 
     <ImageView
-        android:id="@+id/ivIcon"
+        android:id="@+id/ivRainbowIcon"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
